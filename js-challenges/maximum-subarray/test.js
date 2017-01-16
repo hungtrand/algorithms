@@ -8,8 +8,8 @@ describe('find the maximum possible sum of a Contiguous subarray ' +
             'and non-contiguous (not necessarily contiguous) subarray.', function() {
 
     it('should match read an input file and find max values of all array test case 01', function() {
-        var input1 = fs.readFileSync('./test-case-01.txt').toString();
-        var expected = fs.readFileSync('./test-case-01-output.txt').toString();
+        var input1 = fs.readFileSync('./maximum-subarray/test-case-01.txt').toString();
+        var expected = fs.readFileSync('./maximum-subarray/test-case-01-output.txt').toString();
 
         var testArrs = solution.parseInput(input1);
 
@@ -25,8 +25,8 @@ describe('find the maximum possible sum of a Contiguous subarray ' +
     });
 
     it('should match read an input file and find max values of all array test case 02', function() {
-        var input = fs.readFileSync('./test-case-02.txt').toString();
-        var expected = fs.readFileSync('./test-case-02-output.txt').toString();
+        var input = fs.readFileSync('./maximum-subarray/test-case-02.txt').toString();
+        var expected = fs.readFileSync('./maximum-subarray/test-case-02-output.txt').toString();
 
         var testArrs = solution.parseInput(input);
 

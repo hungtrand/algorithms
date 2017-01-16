@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "js-challenges", "js-challenges\", "{27F3DE16-2E38-471A-8531-7E4DE08626AA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_8385"
+		Debug.AspNetCompiler.PhysicalPath = "js-challenges\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8385\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_8385"
+		Release.AspNetCompiler.PhysicalPath = "js-challenges\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8385\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8385"
+		SlnRelativePath = "js-challenges\"
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "js-unit-tests", "js-unit-tests\js-unit-tests.njsproj", "{4C9BE853-EE79-4EF7-A00B-392174E9298E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F3DE16-2E38-471A-8531-7E4DE08626AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F3DE16-2E38-471A-8531-7E4DE08626AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F3DE16-2E38-471A-8531-7E4DE08626AA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F3DE16-2E38-471A-8531-7E4DE08626AA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4C9BE853-EE79-4EF7-A00B-392174E9298E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9BE853-EE79-4EF7-A00B-392174E9298E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9BE853-EE79-4EF7-A00B-392174E9298E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9BE853-EE79-4EF7-A00B-392174E9298E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

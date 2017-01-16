@@ -1,38 +1,35 @@
 var MaxesFinder = function() {
-    this.sorted = null;
-
-}
-MaxesFinder.prototype.findMaxCont = function(arr) {
-    var max = arr[0];
-
-    for (var i = 0, l = arr.length; i < l; i++) {
-        var iMax = arr[i];
-
-        for (var j = i + 1; j < l; j++) {
-            iMax = iMax + arr[j];
-
-            if (iMax > max) max = iMax;
-        }
-    }
-
-    return max;
-}
-
-MaxesFinder.prototype.findMaxNonCont = function(arr) {
-    var sorted = arr.map(function(e) { return e; }).sort().reverse();
-
-    var max = sorted.reduce(function(curMax, next, i) {
-        if (next >= 0) return curMax + next;
-        return curMax;
-    });
-
-    if (max < 0) max = sorted[sorted.length - 1];
-    return max;
 }
 
 MaxesFinder.prototype.find = function(arr) {
-    var maxNonCont = this.findMaxNonCont(arr);
-    var maxCont = this.findMaxCont(arr);
+    // var maxNonCont = this.findMaxNonCont(arr);
+    // var maxCont = this.findMaxCont(arr);
+
+    var contMemo = [];
+    var nonContMemo = [];
+
+    arr.forEach(function(x, i) {
+        if (i == 0) {
+            contMemo[i] = nonContMemo[i] = x;
+        } else {
+            if (x > contMemo[i-1] + x) {
+                contMemo[i] = x;
+            } else {
+                contMemo[i] = contMemo[i-1] + x;
+            }
+
+            if (x >= nonContMemo[i - 1] && nonContMemo[i - 1] < 0) {
+                nonContMemo[i] = x;
+            } else if (x >= 0) {
+                nonContMemo[i] = nonContMemo[i - 1] + x;
+            } else {
+                nonContMemo[i] = nonContMemo[i - 1];
+            }
+        }
+    });
+
+    var maxCont = Math.max.apply(null, contMemo);
+    var maxNonCont = Math.max.apply(null, nonContMemo);
 
     return maxCont.toString() + ' ' + maxNonCont.toString();
 }

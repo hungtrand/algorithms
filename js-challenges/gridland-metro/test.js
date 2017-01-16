@@ -6,9 +6,9 @@ var _ = require('underscore');
 var solve = require('./solution');
 
 describe('GRIDLAND METRO - HACKERRANK CHALLENGE', function() {
-    var input1 = fs.readFileSync("/mnt/Lindows/Projects/hackerrank/js-challenges/gridland-metro/input06.txt").toString();
-    var input2 = fs.readFileSync("/mnt/Lindows/Projects/hackerrank/js-challenges/gridland-metro/input19.txt").toString();
-    var input3 = fs.readFileSync("/mnt/Lindows/Projects/hackerrank/js-challenges/gridland-metro/input07.txt").toString();
+    var input1 = fs.readFileSync("./js-challenges/gridland-metro/input06.txt").toString();
+    var input2 = fs.readFileSync("./js-challenges/gridland-metro/input19.txt").toString();
+    var input3 = fs.readFileSync("./js-challenges/gridland-metro/input07.txt").toString();
 
     var tests = [
         { input: input1, output: "343959391703854850" },

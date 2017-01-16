@@ -1,12 +1,12 @@
 {
-  "name": "js-challenges",
+  "name": "js-unit-tests",
   "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "description": "JsUnitTests",
+  "main": "app.js",
+  "author": {
+    "name": "hung_"
   },
   "devDependencies": {
-    "big-integer": "^1.6.17",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "underscore": "^1.8.3"
